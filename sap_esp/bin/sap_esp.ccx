@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Platform version="5.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" compiled="true">
+
+    <Program>
+        <Section id="$~NEWSTREAM">
+            <Types>
+                <RecordType name="NEWSTREAM_rec">
+                    <Column datatype="string" key="false" name="phoneNo" />
+                    <Column datatype="timestamp" key="false" name="time" />
+                    <Column datatype="integer" key="false" name="etype" />
+                </RecordType>
+            </Types>
+        </Section>
+    </Program>
+
+    <CompiledSourceStream id="NEWSTREAM" section="$~NEWSTREAM" visibility="input" >
+        <Column datatype="string" key="false" name="phoneNo" />
+        <Column datatype="timestamp" key="false" name="time" />
+        <Column datatype="integer" key="false" name="etype" />
+
+        <StatelessInsert name="NEWSTREAM" recordType="NEWSTREAM_rec" result="true" />
+        <PassLogic name="l_NEWSTREAM" priority="0" itype="classic" from="src_NEWSTREAM" to="NEWSTREAM" />
+        <SourceNode name="src_NEWSTREAM" recordType="NEWSTREAM_rec" />
+    </CompiledSourceStream>
+
+
+</Platform>

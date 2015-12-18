@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration xmlns="http://www.sybase.com/esp/project_config/2010/08/">
+  <Runtime>
+    <AdaptersPropertySet>
+      <PropertySet name="Atom Feed Input">
+        <Property name="URL"></Property>
+      </PropertySet>
+      <PropertySet name="Generic DB Input">
+        <Property name="service"></Property>
+      </PropertySet>
+      <PropertySet name="Generic DB Output">
+        <Property name="service"></Property>
+      </PropertySet>
+      <PropertySet name="Sybase ASE Output">
+        <Property name="service"></Property>
+      </PropertySet>
+      <PropertySet name="Sybase IQ Output">
+        <Property name="service"></Property>
+      </PropertySet>
+      <PropertySet name="File CSV Input">
+        <Property name="dir"></Property>
+        <Property name="file"></Property>
+      </PropertySet>
+      <PropertySet name="File CSV Output">
+        <Property name="dir"></Property>
+        <Property name="file"></Property>
+      </PropertySet>
+      <PropertySet name="Socket (As Server) CSV Input">
+        <Property name="port">12345</Property>
+      </PropertySet>
+      <PropertySet name="Socket (As Server) CSV Output">
+        <Property name="port">12345</Property>
+      </PropertySet>
+      <PropertySet name="Socket (As Client) CSV Input">
+        <Property name="host">localhost</Property>
+        <Property name="port">12345</Property>
+      </PropertySet>
+      <PropertySet name="Socket (As Client) CSV Output">
+        <Property name="host">localhost</Property>
+        <Property name="port">12345</Property>
+      </PropertySet>
+      <PropertySet name="File FIX Input">
+        <Property name="fixVersion">4.2</Property>
+        <Property name="fixMessageType"></Property>
+        <Property name="fileName"></Property>
+      </PropertySet>
+      <PropertySet name="File FIX Output">
+        <Property name="fixVersion">4.2</Property>
+        <Property name="fixMessageType"></Property>
+        <Property name="fileName"></Property>
+      </PropertySet>
+      <PropertySet name="FIX Session (external)">
+        <Property name="baseDir"></Property>
+        <Property name="configFilePath"></Property>
+      </PropertySet>
+      <PropertySet name="Socket FIX Input">
+        <Property name="fixVersion">4.2</Property>
+        <Property name="fixMessageType"></Property>
+        <Property name="fixHost">localhost</Property>
+        <Property name="fixPort">12345</Property>
+        <Property name="reconnectInterval">10</Property>
+        <Property name="maxReconnectAttempts">0</Property>
+      </PropertySet>
+      <PropertySet name="Socket FIX Output">
+        <Property name="fixVersion">4.2</Property>
+        <Property name="fixMessageType"></Property>
+        <Property name="fixHost">localhost</Property>
+        <Property name="fixPort">12346</Property>
+      </PropertySet>
+      <PropertySet name="HTTP Adapter (external)">
+        <Property name="baseDir"></Property>
+        <Property name="configFilePath"></Property>
+      </PropertySet>
+      <PropertySet name="JMS CSV Input">
+        <Property name="delimiter">,</Property>
+        <Property name="connectionFactory"></Property>
+        <Property name="jndiContextFactory"></Property>
+        <Property name="jndiURL"></Property>
+        <Property name="destinationType">QUEUE</Property>
+        <Property name="destinationName"></Property>
+      </PropertySet>
+      <PropertySet name="JMS CSV Output">
+        <Property name="delimiter">,</Property>
+        <Property name="connectionFactory"></Property>
+        <Property name="jndiContextFactory"></Property>
+        <Property name="jndiURL"></Property>
+        <Property name="destinationType">QUEUE</Property>
+        <Property name="destinationName"></Property>
+      </PropertySet>
+      <PropertySet name="JMS Custom Format Input">
+        <Property name="connectionFactory"></Property>
+        <Property name="jndiContextFactory"></Property>
+        <Property name="jndiURL"></Property>
+        <Property name="destinationType">QUEUE</Property>
+        <Property name="destinationName"></Property>
+        <Property name="converterClassName">com.sybase.esp.connectors.DefaultExternalToESPConverter</Property>
+      </PropertySet>
+      <PropertySet name="JMS Custom Format Output">
+        <Property name="connectionFactory"></Property>
+        <Property name="jndiContextFactory"></Property>
+        <Property name="jndiURL"></Property>
+        <Property name="destinationType">QUEUE</Property>
+        <Property name="destinationName"></Property>
+        <Property name="converterClassName">com.sybase.esp.connectors.DefaultESPToExternalConverter</Property>
+      </PropertySet>
+      <PropertySet name="JMS FIX Input">
+        <Property name="connectionFactory"></Property>
+        <Property name="jndiContextFactory"></Property>
+        <Property name="jndiURL"></Property>
+        <Property name="destinationType">QUEUE</Property>
+        <Property name="destinationName"></Property>
+        <Property name="fixVersion">4.2</Property>
+        <Property name="fixMessageType"></Property>
+      </PropertySet>
+      <PropertySet name="JMS FIX Output">
+        <Property name="connectionFactory"></Property>
+        <Property name="jndiContextFactory"></Property>
+        <Property name="jndiURL"></Property>
+        <Property name="destinationType">QUEUE</Property>
+        <Property name="destinationName"></Property>
+        <Property name="fixVersion">4.2</Property>
+        <Property name="fixMessageType"></Property>
+      </PropertySet>
+      <PropertySet name="JMS Object Array Input">
+        <Property name="connectionFactory"></Property>
+        <Property name="jndiContextFactory"></Property>
+        <Property name="jndiURL"></Property>
+        <Property name="destinationType">QUEUE</Property>
+        <Property name="destinationName"></Property>
+      </PropertySet>
+      <PropertySet name="JMS Object Array Output">
+        <Property name="connectionFactory"></Property>
+        <Property name="jndiContextFactory"></Property>
+        <Property name="jndiURL"></Property>
+        <Property name="destinationType">QUEUE</Property>
+        <Property name="destinationName"></Property>
+      </PropertySet>
+      <PropertySet name="JMS XML Input">
+        <Property name="connectionFactory"></Property>
+        <Property name="jndiContextFactory"></Property>
+        <Property name="jndiURL"></Property>
+        <Property name="destinationType">QUEUE</Property>
+        <Property name="destinationName"></Property>
+      </PropertySet>
+      <PropertySet name="JMS XML Output">
+        <Property name="connectionFactory"></Property>
+        <Property name="jndiContextFactory"></Property>
+        <Property name="jndiURL"></Property>
+        <Property name="destinationType">QUEUE</Property>
+        <Property name="destinationName"></Property>
+      </PropertySet>
+      <PropertySet name="KDB Input (external)">
+        <Property name="server">localhost</Property>
+        <Property name="port">5001</Property>
+      </PropertySet>
+      <PropertySet name="KDB Output (external)">
+        <Property name="server">localhost</Property>
+        <Property name="port">5001</Property>
+      </PropertySet>
+      <PropertySet name="Sybase ESP Input">
+        <Property name="host"></Property>
+        <Property name="port"></Property>
+      </PropertySet>
+      <PropertySet name="Random Tuples Generator"/>
+      <PropertySet name="Replication Server Input (external)">
+        <Property name="rssdHost">localhost</Property>
+        <Property name="rssdPort">5000</Property>
+        <Property name="rssdDatabaseName">SAMPLE_RS_RSSD</Property>
+        <Property name="rssdUser">sa</Property>
+        <Property name="repSubscriptionServer">RSadapter</Property>
+        <Property name="projectUri"></Property>
+        <Property name="authType">user_password</Property>
+      </PropertySet>
+      <PropertySet name="RMDS Marketfeed Input (external)">
+        <Property name="baseDir">$ESP_HOME/adapters/reuters</Property>
+        <Property name="discDir">$ESP_HOME/adapters/reuters/schema</Property>
+        <Property name="mf_dictionary">$ESP_HOME/adapters/reuters/config/appendix_a</Property>
+        <Property name="configFile">$ESP_REUTERS_HOME/examples/subexample.map.xml</Property>
+      </PropertySet>
+      <PropertySet name="RMDS OMM Input (external)">
+        <Property name="baseDir">$ESP_HOME/adapters/reuters_omm</Property>
+        <Property name="omm_dictionary">$ESP_HOME/adapters/reuters_omm/config/RDMFieldDictionary</Property>
+        <Property name="configFile">$ESP_HOME/adapters/reuters_omm/examples/subexample.omm.map.xml</Property>
+        <Property name="discDir">$ESP_HOME/adapters/reuters_omm/schema</Property>
+      </PropertySet>
+      <PropertySet name="SMTP Output">
+        <Property name="smtpHost"></Property>
+        <Property name="addressColumn">toAddress</Property>
+        <Property name="subjectColumn">subject</Property>
+        <Property name="importanceColumn">importance</Property>
+        <Property name="fromAddress"></Property>
+      </PropertySet>
+      <PropertySet name="Tibco Rendezvous Input (external)">
+        <Property name="baseDir"></Property>
+        <Property name="configFilePath"></Property>
+      </PropertySet>
+      <PropertySet name="NYSE Technologies Input (external)">
+        <Property name="baseDir">/mydir/WombatAdapter</Property>
+        <Property name="configFilePath">/mydir/WombatAdapter/config/adapter.xml</Property>
+        <Property name="discDirPath">/mydir/WombatAdapter/discovery</Property>
+      </PropertySet>
+      <PropertySet name="File XML Input">
+        <Property name="dir"></Property>
+        <Property name="file"></Property>
+      </PropertySet>
+      <PropertySet name="File XML Output">
+        <Property name="dir"></Property>
+        <Property name="file"></Property>
+      </PropertySet>
+      <PropertySet name="Socket (As Server) XML Input">
+        <Property name="port">12345</Property>
+      </PropertySet>
+      <PropertySet name="Socket (As Server) XML Output">
+        <Property name="port">12345</Property>
+      </PropertySet>
+      <PropertySet name="Socket (As Client) XML Input">
+        <Property name="host">localhost</Property>
+        <Property name="port">12345</Property>
+      </PropertySet>
+      <PropertySet name="Socket (As Client) XML Output">
+        <Property name="host">localhost</Property>
+        <Property name="port">12345</Property>
+      </PropertySet>
+    </AdaptersPropertySet>
+  </Runtime>
+  <Deployment>
+    <Project ha="false">
+      <Options>
+        <Option name="time-granularity" value="5"/>
+        <Option name="debug-level" value="3"/>
+      </Options>
+      <Instances>
+        <Instance>
+          <Failover enable="false"/>
+          <Affinities/>
+        </Instance>
+      </Instances>
+    </Project>
+  </Deployment>
+</Configuration>

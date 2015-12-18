@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.sybase.cep.studio.emf.notation:NotationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.sybase.cep.studio.emf.notation="http://com.sybase.cep.studio.emf.notation">
+  <diagrams title="Diagram">
+    <semanticElement href="sap_esp.ccl#/"/>
+    <children xsi:type="com.sybase.cep.studio.emf.notation:Node" style="2" diagram="//@diagrams.0" width="-1" height="-1">
+      <semanticElement href="sap_esp.ccl#NEWSTREAM"/>
+    </children>
+  </diagrams>
+  <semanticElement href="sap_esp.ccl#/"/>
+</com.sybase.cep.studio.emf.notation:NotationModel>
